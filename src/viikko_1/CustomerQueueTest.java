@@ -1,6 +1,14 @@
 package viikko_1;
 
 /*
+    Write a program in which you create the customers coded in the previous task
+    and put them in a queue and remove them from it by the user of the program
+    (make a simple text-based user interface where the user is asked for actions: add, delete).
+    As a queue, use the LinkedList class with the FIFO principle (first in first out,
+    the one that has been in the list the longest gets out first:
+    the add and remove methods of the LinkedList class).
+    Write a test program and print the time spent in the queue for each deleted customer.
+    To measure the time, you can use the System.nanotime() method.
 */
 
 import java.util.LinkedList;
