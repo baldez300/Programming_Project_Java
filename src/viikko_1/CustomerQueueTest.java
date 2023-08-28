@@ -68,23 +68,27 @@ public class CustomerQueueTest {
 
             if (choice == 1) {
                 CustomerStep2 customer = new CustomerStep2();
-                System.out.print("Enter start time for customer " + customer.getId() + ": ");
+                System.out.print("Initiate timer for customer " + customer.getId() + ": ");
                 customer.setStartTime(System.nanoTime());
                 customerQueue.add(customer);
                 System.out.println("Customer " + customer.getId() + " added to the queue.");
-            } else if (choice == 2) {
+            }
+            else if (choice == 2) {
                 if (!customerQueue.isEmpty()) {
                     CustomerStep2 removedCustomer = customerQueue.remove();
                     removedCustomer.setEndTime(System.nanoTime());
                     long timeSpentInQueue = removedCustomer.getTimeSpent();
                     System.out.println("Customer " + removedCustomer.getId() + " removed from the queue.");
                     System.out.println("Time spent in queue: " + timeSpentInQueue + " nanoseconds.");
-                } else {
+                }
+                else {
                     System.out.println("Queue is empty.");
                 }
-            } else if (choice == 3) {
+            }
+            else if (choice == 3) {
                 break;
-            } else {
+            }
+            else {
                 System.out.println("Invalid choice. Please choose again.");
             }
         }
