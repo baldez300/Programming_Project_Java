@@ -1,4 +1,4 @@
-package viikko_2.Task3_1_1;
+package viikko_2.Task3_1_3;
 
 /*
     Implement the Clock class needed by the Simulator software according to the Singleton model.

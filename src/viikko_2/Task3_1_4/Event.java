@@ -1,4 +1,4 @@
-package viikko_2.Task3_1_2;
+package viikko_2.Task3_1_4;
 
 public class Event {
     private final String type; // Type of the event
